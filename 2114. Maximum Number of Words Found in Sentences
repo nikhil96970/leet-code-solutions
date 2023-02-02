@@ -1,0 +1,8 @@
+class Solution:
+    def mostWordsFound(self, sent: List[str]) -> int:
+        res = 0
+        for sen in sent:
+            l = list(sen.split())
+            t = len(l)
+            res = max(res,t)
+        return res
